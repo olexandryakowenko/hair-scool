@@ -1002,6 +1002,7 @@ img {
 	width: -webkit-calc(100% / 3 - 36px);
 	width: calc(100% / 3 - 36px);
 	margin: 0 18px 30px;
+	height: 550px;
 }
 
 .product__container .product__item--img img {
@@ -3012,6 +3013,10 @@ img {
 
 .product__container {
 	width: auto;
+}
+
+.product__item--title {
+	font-size: 16px;
 }
 
 .courses__sidebar {
