@@ -3216,3 +3216,13 @@ img {
 
 }
 
+@media screen and (max-width: 360px) {
+	.main-footer_wrap {
+		flex-direction: column;
+	}
+
+	.main-footer_box p {
+		font-size: 16px;
+	}
+}
+
