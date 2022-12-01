@@ -1576,7 +1576,7 @@ img {
 	padding-top: 56%;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 }
 
@@ -3072,6 +3072,10 @@ img {
 
 .search__wrap {
 	width: auto;
+}
+
+.main-footer_col {
+	max-width: 50%;
 }
 
 }
