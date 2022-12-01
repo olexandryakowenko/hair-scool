@@ -371,6 +371,15 @@ img {
 	fill: #c90000;
 }
 
+.main-footer_box > a {
+	color: #fff;
+	margin-left: 20px;
+}
+
+.main-footer_box > a:hover {
+	font-weight: bold;
+}
+
 .mobile-wrap {
 	display: none;
 	-webkit-box-align: center;
