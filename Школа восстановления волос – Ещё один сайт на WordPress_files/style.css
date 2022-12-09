@@ -3221,9 +3221,7 @@ img {
 }
 
 .footer-logo-max {
-  overflow: hidden;
-  visibility: hidden;
-  position: absolute;
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -3234,15 +3232,14 @@ img {
   }
 
   .footer-logo {
-    overflow: hidden;
-    visibility: hidden;
-    position: absolute;
+    display: none;
   }
 
   .footer-logo-max {
     height: 100px;
     margin-left: auto;
     margin-top: auto;
+	display: block;
   }
 
   .main-footer_name {
