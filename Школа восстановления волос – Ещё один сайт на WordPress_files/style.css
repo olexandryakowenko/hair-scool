@@ -3220,12 +3220,17 @@ img {
   }
 }
 
+.footer-logo-max {
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+}
+
 @media screen and (min-width: 1200px) {
   .main-footer_wrap {
     margin: auto;
     padding: 20px 40px;
     display: flex;
-
   }
 
   .footer-logo {
@@ -3235,13 +3240,13 @@ img {
   }
 
   .footer-logo-max {
-	height: 100px;
-	margin-left: auto;
-	margin-top: auto;
+    height: 100px;
+    margin-left: auto;
+    margin-top: auto;
   }
 
   .main-footer_name {
-	margin-top: auto;
+    margin-top: auto;
     margin-bottom: 20px;
   }
 
