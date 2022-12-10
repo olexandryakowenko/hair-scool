@@ -565,8 +565,10 @@ img {
 }
 
 .logo-wrap img {
-  display: block;
-  max-width: 320px;
+	display: block;
+	max-width: 320px;
+
+	animation: 1.5s ease-out 0s 1 scaleLogo;
 }
 
 .logo-wrap h1 {
