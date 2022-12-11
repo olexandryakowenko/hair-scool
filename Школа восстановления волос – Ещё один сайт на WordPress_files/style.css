@@ -2725,6 +2725,38 @@ img {
 	flex-direction: column;
 
 	position: absolute;
+
+	bottom: 15px;
+
+	background-color: white;
+
+	border: 1px solid black;
+	border-radius: 5px;
+
+	padding: 32px;
+}
+
+.helper__form--input {
+	margin-bottom: 16px;
+}
+
+.helper__form--button {
+	width: 100%;
+	padding: 8px 0;
+
+	border: 1px solid black;
+	border-radius: 5px;
+
+	background-color: transparent;
+
+	text-transform: uppercase;
+
+	transition: all 0.5s;
+}
+
+.helper__form--button:hover {
+	background-color: black;
+	color: #c9a866;
 }
 
 .helper__form--default {
@@ -2733,13 +2765,13 @@ img {
 
 .helper__form--opening {
 	animation: 1s openingMenu;
-	animation-timing-function: linear;
+	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 }
 
 .helper__form--closing {
 	animation: 1s closingMenu;
-	animation-timing-function: linear;
+	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 }
 

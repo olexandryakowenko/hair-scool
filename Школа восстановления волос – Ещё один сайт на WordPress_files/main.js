@@ -611,7 +611,7 @@ const checker = document.getElementById('helper');
 
 checker.addEventListener('click',(event) => {
     event.preventDefault();
-    ContactForm()
+    ContactForm();
 });
 
 function ContactForm() {
