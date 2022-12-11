@@ -565,8 +565,20 @@ img {
 }
 
 .logo-wrap img {
-  display: block;
-  max-width: 320px;
+	display: block;
+	max-width: 320px;
+
+	animation: 1.3s linear 0s 1 scaleLogo;
+}
+
+@keyframes scaleLogo {
+	0% {
+		transform: scale(0) rotate(0deg);
+	}
+
+	100% {
+		transform: scale(100%) rotate(360deg);
+	}
 }
 
 .logo-wrap h1 {
@@ -1691,12 +1703,12 @@ img {
 }
 
 .contacts__info--text {
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
 .contacts__info--phone {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -1704,7 +1716,7 @@ img {
   font-size: 22px;
   width: 24px;
   text-align: center;
-  margin-right: 20px;
+  margin-right: 8px;
 }
 
 .contacts__errors {
@@ -2698,6 +2710,120 @@ img {
   .product-wrap {
     margin: 0;
   }
+}
+
+.helper {
+	position: fixed;
+	bottom: 100px;
+
+	z-index: 50;
+	right: 40px;
+}
+
+.helper__form {
+	display: flex;
+	flex-direction: column;
+
+	position: absolute;
+
+	bottom: 15px;
+
+	background-color: white;
+
+	border: 1px solid black;
+	border-radius: 5px;
+
+	padding: 32px;
+}
+
+.helper__form--input {
+	margin-bottom: 16px;
+}
+
+.helper__form--button {
+	width: 100%;
+	padding: 8px 0;
+
+	border: 1px solid black;
+	border-radius: 5px;
+
+	background-color: transparent;
+
+	text-transform: uppercase;
+
+	transition: all 0.5s;
+}
+
+.helper__form--button:hover {
+	background-color: black;
+	color: #c9a866;
+}
+
+.helper__form--default {
+	right: -500px;
+}
+
+.helper__form--opening {
+	animation: 1s openingMenu;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.helper__form--closing {
+	animation: 1s closingMenu;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes openingMenu {
+	from {
+		right: -500px;
+	}
+	to {
+		right: 0;
+	}	
+}
+
+@keyframes closingMenu {
+	from {
+		right: 0;
+	}
+	to {
+		right: -500px;
+	}	
+}
+
+.helper__label {
+	position: absolute;
+
+	width: 50px;
+	height: 50px;
+
+	background-color: blue;
+	border-radius: 50%;
+
+	right: -200px;
+
+	animation: 10s helperSlideOut;
+	animation-timing-function: cubic-bezier(.9,.16,.49,1.07);
+	animation-fill-mode: forwards;
+}
+
+.helper__label:hover {
+	background-color: skyblue;
+}
+
+.helper__button {
+	display: none;
+}
+
+@keyframes helperSlideOut{
+	from {
+		right: -200px;
+	}
+	to {
+		right: 0;
+	}
 }
 
 @media screen and (max-width: 1250px) {
