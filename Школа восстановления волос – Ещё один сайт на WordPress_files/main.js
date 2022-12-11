@@ -605,8 +605,28 @@ $('.overlay-close').click(function () {
     }
 });
 
-function showContactForm() {
-    
-}
-
 });
+
+const checker = document.getElementById('helper');
+
+checker.addEventListener('click',(event) => {
+    event.preventDefault();
+    ContactForm()
+});
+
+function ContactForm() {
+    const form = document.getElementById('modalForm');
+    const formClasses = form.classList;
+
+    if (formClasses.contains('helper__form--default')) {
+        form.classList.replace('helper__form--default', 'helper__form--opening');
+    } else 
+
+    if (formClasses.contains('helper__form--opening')) {
+        form.classList.replace('helper__form--opening', 'helper__form--closing');
+    } else 
+
+    if (formClasses.contains('helper__form--closing')) {
+        form.classList.replace('helper__form--closing', 'helper__form--opening');
+    }
+}

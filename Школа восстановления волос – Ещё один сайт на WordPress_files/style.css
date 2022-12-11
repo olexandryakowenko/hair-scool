@@ -2721,7 +2721,44 @@ img {
 }
 
 .helper__form {
+	display: flex;
+	flex-direction: column;
 
+	position: absolute;
+}
+
+.helper__form--default {
+	right: -500px;
+}
+
+.helper__form--opening {
+	animation: 1s openingMenu;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.helper__form--closing {
+	animation: 1s closingMenu;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes openingMenu {
+	from {
+		right: -500px;
+	}
+	to {
+		right: 0;
+	}	
+}
+
+@keyframes closingMenu {
+	from {
+		right: 0;
+	}
+	to {
+		right: -500px;
+	}	
 }
 
 .helper__label {
